@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h1{
+text-align:center;
+		}
+		form{
+			width:400px;
+			margin:0 auto;
+		}
+		table,td{
+
+			border:1px solid;
+			border-collapse: collapse;
+		}
+		td{
+			padding:5px;
+		}
+		table{
+			width:100%;
+		}
+		.title{text-align:center;
+			background:lightblue;}
+		.btn{text-align:center;
+			background:blue;}
+		.data{background:orange;}
+
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		<h1>Information Form</h1>
+		<table>
+			
+			<tr>
+				<td class="title">name</td>
+				<td class="data"><input type="text" name="name" value=""></td>
+			</tr>
+			<tr>
+				<td  class="title">pwd</td> 
+				<td class="data"><input type="passsword" name="pwd" value=""></td>
+			</tr>
+				<tr>
+					<td  class="title">sex</td>
+					  <td class="data"><input type="radio" name="sex" value="1" checked>male
+					      <input type="radio" name="sex" value="0">female
+					  </td>
+				</tr>
+		 	<tr>
+		 	 <td  class="title">age</td>
+		 	  <td class="data"> <select name="age">
+		 	     <option value="1">1</option>
+		 	     <option value="2">2</option>
+		 	     <option value="3">3</option>
+		 	   </select></td>
+		 	 </tr>
+		 	  <tr>
+		 	   	<td  class="title">course</td> 
+		 	   	<td class="data"> <input type ="checkbox" name="course" value="1">Chinese
+	        <input type ="checkbox" name="course" value="2">Math
+	        <input type ="checkbox" name="course" value="3">English
+	        </td>
+	      </tr>
+	        <tr> 
+	         <td colspan="2" class="btn"> <input type="submit" value="Submit it!">   <input type="reset" value="Reset it!"></td>
+	       </tr>
+		    </table>
+		    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 300px;
+			height: 300px;
+			border:5px solid red;
+		}
+
+		.ball{
+			width: 20px;
+			height: 20px;
+			background: green;
+			border-radius: 50%;
+			animation:ball 2s linear infinite alternate;
+			position: relative;
+
+		}
+		@keyframes ball{
+	/* 设置几个特定时间点进行怎样的变化 */
+	0%{
+		left:0;
+		top:0;
+		
+	}
+  25%{
+	left:280px;
+	top:0;
+
+}
+50%{
+	left:280px;
+	top:280px;
+}
+75%{
+	left:0;
+	top:280px;
+}
+100%{
+	left: 0;
+	top: 0;
+}
+	
+}
+			</style>
+		</head>
+<body>
+	<div class="box">
+		<div class="ball"></div>
+	</div>
+</body>
+</html>

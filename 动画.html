@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.a{
+			width: 300px;
+			height: 300px;
+			background: red;
+	
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-left: -150px;
+			margin-top:-150px;
+			
+			animation:rotate 2s linear alternate infinite;
+		}
+		.a:hover{
+			transform: rotate(72deg);
+		}
+		/* 关键帧 */
+@keyframes rotate{
+	/* 设置几个特定时间点进行怎样的变化 */
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="a"></div>
+</body>
+</html>

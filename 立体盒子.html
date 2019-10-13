@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	@keyframes rotate{
+		0%{
+			transform: rotateX(20000deg) ;
+		}
+		100%{
+			transform: rotateX(0deg) ;
+		}
+	}
+
+		.show{
+			perspective: 1000px;
+		
+			width: 700px;
+			height: 700px;
+			position: absolute;
+			top:50%;
+			left:50%;
+			margin-left: -350px;
+			margin-top:-350px;
+
+		}
+		.box{
+			transform-style:preserve-3d;
+			position: absolute;
+			width: 450px;
+			height: 450px;
+				top:50%;
+			left:50%;
+			margin-top:-225px;
+			margin-left:-225px;
+			
+			
+		}
+		.face{
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			margin-left:-75px;
+			margin-top:-75px;
+			top:50%;
+			left:50%;
+      font-size: 84px;
+      text-align: center;
+      line-height: 150px;
+      
+      transition: 2s linear ;
+		}
+		.face1{
+			background:currentcolor;
+			color:green;
+			transform: translateZ(75px);
+		}
+		.face2{
+			background:currentcolor;
+			color:yellow;
+			transform: rotateY(180deg) translateZ(75px);
+		}
+		.face3{
+			color:orange;
+			background:currentcolor;
+			transform: rotateY(90deg) translateZ(75px);
+		}
+		.face4{
+			background:currentcolor;
+			color:blue;
+			transform:rotateY(-90deg) translateZ(75px);
+		}
+		.face5{
+			background:currentcolor;
+			color:purple;
+			transform:rotateX(90deg) translateZ(75px) ;
+		}
+		.face6{
+			background: currentcolor;
+			color:pink;
+			transform: rotateX(-90deg) translateZ(75px);
+		}
+		.face7{
+			transform: translateZ(225px);
+		}
+		.face8{
+			transform: rotateY(180deg) translateZ(225px);
+		}
+		.face9{
+			transform: rotateY(90deg) translateZ(225px);
+		}
+		.face10{
+			transform:rotateY(-90deg) translateZ(225px);
+		}
+		.face11{
+			transform:rotateX(90deg) translateZ(225px) ;
+		}
+		.face12{
+			transform: rotateX(-90deg) translateZ(225px);
+		}
+		.box:hover .face{
+			box-shadow: 0 0 20px currentcolor;
+			border-radius: 50%;
+		}
+		
+	.fe{
+			position: absolute;
+			width: 450px;
+			height: 450px;
+			margin-left:-225px;
+			margin-top:-225px;
+			top:50%;
+			left:50%;
+      line-height: 450px;
+      transition: 2s linear ;
+      background:gray;
+		opacity: .3;
+		}
+  .box:hover .face7{
+		transform: translateZ(300px);
+		border-radius: 50%;
+	}
+ .box:hover .face8{
+	transform: rotateY(180deg) translateZ(300px);
+	border-radius: 50%;
+}
+ .box:hover .face9{
+	transform: rotateY(90deg) translateZ(300px);
+	border-radius: 50%;
+}
+ .box:hover .face10{
+ 		transform:rotateY(-90deg) translateZ(300px);
+ 		border-radius: 50%;
+ }
+ .box:hover .face11{
+ 	transform:rotateX(90deg) translateZ(300px) ;
+ 	border-radius: 50%;
+ }
+ .box:hover .face12{
+ 	transform: rotateX(-90deg) translateZ(300px);
+border-radius: 50%;
+ }
+ .box:hover{
+ 	animation: rotate 2s linear alternate infinite;
+ }
+
+}
+	</style>
+</head>
+<body>
+	<div class="show">
+	 <div class="box">
+	  <div class="face face1"></div>
+	  <div class="face face2"></div>
+	  <div class="face face3"></div>
+	  <div class="face face4"></div>
+	  <div class="face face5"></div>
+	  <div class="face face6"></div>
+
+	  <div class="fe face7"></div>
+	  <div class="fe face8"></div>
+	  <div class="fe face9"></div>
+	  <div class="fe face10"></div>
+	  <div class="fe face11"></div>
+	  <div class="fe face12"></div>
+	 </div>
+	</div>
+</body>
+</html>

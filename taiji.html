@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width:300px;
+			height:600px;
+      background:black;
+			border-right:300px solid  white;
+			box-shadow:0 0 30px;
+			border-radius: 50%;
+			margin:50px auto;
+		}
+		div::before{
+			content:"";
+			display:block;
+			width: 100px;
+			height: 100px;
+			background:black;
+			border-radius: 	50%;
+			border:100px solid white;
+			margin-left:150px;
+		}
+		div::after{
+			content:"";
+			display:block;
+			width: 100px;
+			height: 100px;
+			background:white;
+			border-radius: 	50%;
+			border:100px solid black;
+			margin-left:150px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

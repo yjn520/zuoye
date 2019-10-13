@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul{
+			margin:0 ;
+			padding:0;
+		}
+		ul{
+			list-style:none;
+		}
+		a img{
+			border:none;
+		}
+		img{
+			display:block;
+		}
+		.clearfix::after{
+			content:'';
+			display:block;
+			clear:both;
+		}
+		
+		.box{
+			margin:10px auto;
+			border:10px solid #f00;
+			position: relative;
+			width: 520px;
+			height: 280px;
+		}
+		.imgs{
+			 width:2600px; /*一个图的宽度乘以图片数量 */
+		}
+		.imgs li{
+			float:left;
+		}
+		.arrow{
+			width: 20px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			background:black;
+			color:white;
+			font-weight:bold;
+			font-family: 黑体;
+			position: absolute;
+			top:125px;
+			cursor:pointer;
+			opacity: 0;
+          }
+      .box:hover .arrow{
+          	opacity: .5
+          }
+       .box .arrow:hover{
+             opacity:.8;
+}
+		 .aleft{
+      border-radius: 0 10px 10px 0;
+      left:0;
+      padding-left:5px;
+		}
+		.aright{
+			border-radius: 15px 0 0 15px;
+			right:0;
+			padding-right: 5px;
+		}
+		.btns{
+			position: absolute;
+			bottom: 20px;
+			background: rgba(255,255,255,.5);
+			left:50%;
+       margin:0 auto;
+			margin-left:-40px;
+			border-radius: 8px;
+		
+		    }
+		.btns li{
+			float:left;
+			width: 10px;
+			height: 10px;
+			background: white;
+			border-radius: 50%;
+			margin:5px;
+			cursor:pointer;
+		}
+		.btns .cur{
+			background:red ;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- 轮播图 -->
+	<div class="box">
+		<!-- 图片 -->
+		<ul class="imgs">
+			<li><a href="#"><img src="images/1.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/2.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/3.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/4.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/5.jpg" alt=""></a></li>
+			
+		</ul>
+		<!-- 左箭头 -->
+		<div class="arrow aleft">&lt;</div>
+		<!-- 右箭头 -->
+		<div class="arrow aright">&gt;</div>
+		<!-- 底部按钮 -->
+		<ul class="btns">
+			<li class="cur"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
